@@ -1,1 +1,1 @@
-build/default/debug/main.o: main.c servo.h
+build/default/debug/main.o: main.c servo.c

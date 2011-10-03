@@ -4,7 +4,7 @@
 #include <delays.h>
 
 
-#include "servo.h"
+#include "servo.c"
 
 
 /////*CONFIGURATION*/////
@@ -46,6 +46,7 @@ void low_interrupt(void)
 {
      _asm GOTO low_isr _endasm
 }
+
 #pragma code
 
 #pragma interrupt high_isr
@@ -61,6 +62,7 @@ void low_isr(void)
 
 }
 
+#pragma code
 void main (void)
 {
 //initialisations
@@ -77,8 +79,9 @@ void main (void)
 //Variables Globales
 //Début Programme
     while(1){
-        WriteServo(0, 40);
-        WriteServo(1, 180);
+        WriteServo(0, 180);
+        WriteServo(1, 40);
+        //Delay100TCYx(1);
     }
 }
 

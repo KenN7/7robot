@@ -1,1 +1,1 @@
-build/default/production/main.o: main.c servo.h
+build/default/production/main.o: main.c servo.c
