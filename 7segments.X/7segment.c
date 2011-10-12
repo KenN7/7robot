@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <p18f2550.h>
 #include <delays.h>
+#include <timers.h>
 
 
 /////*CONFIGURATION*/////
@@ -72,10 +73,28 @@ void main (void)
     UCON    = 0 ;           /* Désactive l'USB. */
     UCFG    = 0b00001000 ;
     TRISA   = 0b01000000 ;
-    TRISBbits.RB0 = 0 ;
-   
+    TRISBbits.RB0 = 0 ; // leds in output
+    TRISBbits.RB1 = 0;
+    TRISBbits.RB2 = 0; // multiplexing with transistors in output
+
+    OpenTimer0( TIMER_INT_ON &
+                T0_8BIT &
+                T0_SOURCE_INT &
+                T0_PS_1_32 );
+
+   /* OpenTimer1( TIMER_INT_ON
+                  T1_8BIT_RW
+                  T1_SOURCE_EXT
+                  T1_PS_1_1
+                  T1_OSC1EN_OFF
+                  T1_SYNC_EXT_OFF);
+
+*/
+
 //Variables Globales
 //Début Programme
+    PORTBbits.RB1 = 0;
+    PORTBbits.RB2 = 1;
     while(1){
         for (i = 0; i<10; i++) {
            caract(i);
@@ -91,35 +110,35 @@ void main (void)
 void caract(char i)
 {
     switch(i) {
-         case 0 : PORTA = 0b00111111;
+         case 0 : PORTA = 0b00000000;
+                  PORTBbits.RB0 = 1;
+        break;
+         case 1 : PORTA = 0b00111001;
+                  PORTBbits.RB0 = 1;
+        break;
+         case 2 : PORTA = 0b00100100;
                   PORTBbits.RB0 = 0;
         break;
-         case 1 : PORTA = 0b00000110;
+         case 3 : PORTA = 0b00110000;
                   PORTBbits.RB0 = 0;
         break;
-         case 2 : PORTA = 0b00011011;
-                  PORTBbits.RB0 = 1;
-        break;
-         case 3 : PORTA = 0b00001111;
-                  PORTBbits.RB0 = 1;
-        break;
-         case 4 : PORTA = 0b00100110;
-                  PORTBbits.RB0 = 1;
-        break;
-         case 5 : PORTA = 0b00101101;
-                  PORTBbits.RB0 = 1;
-        break;
-         case 6 : PORTA = 0b00111101;
-                  PORTBbits.RB0 = 1;
-        break;
-         case 7 : PORTA = 0b00000111;
+         case 4 : PORTA = 0b00011001;
                   PORTBbits.RB0 = 0;
         break;
-         case 8 : PORTA = 0b00111111;
+         case 5 : PORTA = 0b00010010;
+                  PORTBbits.RB0 = 0;
+        break;
+         case 6 : PORTA = 0b00000010;
+                  PORTBbits.RB0 = 0;
+        break;
+         case 7 : PORTA = 0b00111000;
                   PORTBbits.RB0 = 1;
         break;
-         case 9 : PORTA = 0b00101111;
-                  PORTBbits.RB0 = 1;
+         case 8 : PORTA = 0b00000000;
+                  PORTBbits.RB0 = 0;
+        break;
+         case 9 : PORTA = 0b00010000;
+                  PORTBbits.RB0 = 0;
         break;
         /* case o : PORTA = 0b00011100;
                   PORTBbits.RB0 = 1;
