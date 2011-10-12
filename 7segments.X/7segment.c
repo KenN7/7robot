@@ -3,6 +3,7 @@
 #include <p18f2550.h>
 #include <delays.h>
 #include <timers.h>
+#include <portb.h>
 
 
 /////*CONFIGURATION*/////
@@ -23,6 +24,7 @@
 #pragma config PLLDIV = 2
 
  int i;
+ long timems = 0;
 /////*PROTOTYPES*/////
 
 void high_isr(void);
@@ -51,15 +53,32 @@ void low_interrupt(void)
 #pragma interrupt high_isr
 void high_isr(void)
 {
+/*    if (INTCONbits.RBIE && INTCONbits.RBIF)
+    {
+        PORTBbits.RB2 = PORTBbits.RB2^1;
+        PORTBbits.RB3 = PORTBbits.RB3^1;
+
+        INTCONbits.RBIF = 0 ;
+    }*/
    
 }
 
 #pragma interrupt low_isr
 void low_isr(void)
 {
+ if (INTCONbits.TMR0IE && INTCONbits.TMR0IF) {
+    timems++;
+    WriteTimer0(65535-1000); // 1000 cycles corresponds to 1ms
+    INTCONbits.TMR0IF = 0;
+    }
 
+if (PIE1bits.TMR2IE && PIR1bits.TMR2IF) {
+
+    PIR1bits.TMR2IF = 0;
+    }
 
 }
+
 
 #pragma code
 void main (void)
@@ -69,37 +88,50 @@ void main (void)
     ADCON0  = 0b00000000;
     ADCON1  = 0b00001111;
     WDTCON  = 0 ;
-    OSCCON  = 0b01111111;
+    OSCCON  = 0b01101111; //oscillator to 1mhz 
     UCON    = 0 ;           /* Désactive l'USB. */
     UCFG    = 0b00001000 ;
     TRISA   = 0b01000000 ;
     TRISBbits.RB0 = 0 ; // leds in output
-    TRISBbits.RB1 = 0;
-    TRISBbits.RB2 = 0; // multiplexing with transistors in output
+
+    TRISBbits.RB1 = 1; //pin of the button
+
+    TRISBbits.RB2 = 0;
+    TRISBbits.RB3 = 0; // multiplexing with transistors in output
+
+     //RCONbits.IPEN = 1;
+
+   // INTCONbits.GIEL = 1;
+    
+
+    
 
     OpenTimer0( TIMER_INT_ON &
-                T0_8BIT &
+                T0_16BIT &
                 T0_SOURCE_INT &
-                T0_PS_1_32 );
+                T0_PS_1_1 );
 
-   /* OpenTimer1( TIMER_INT_ON
-                  T1_8BIT_RW
-                  T1_SOURCE_EXT
-                  T1_PS_1_1
-                  T1_OSC1EN_OFF
-                  T1_SYNC_EXT_OFF);
+ /*  OpenTimer2( TIMER_INT_ON &
+               T2_PS_1_1 &
+               T2_POST_1_1); */
 
-*/
+  /* OpenRB1INT( PORTB_CHANGE_INT_ON &
+               RISING_EDGE_INT &
+               PORTB_PULLUPS_OFF); */
+
+WriteTimer0(65535-1000);
 
 //Variables Globales
+
+    PORTBbits.RB2 = 1; //transitors pins for multiplexing
+    PORTBbits.RB3 = 0;
+
 //Début Programme
-    PORTBbits.RB1 = 0;
-    PORTBbits.RB2 = 1;
+
     while(1){
         for (i = 0; i<10; i++) {
            caract(i);
-           Delay10KTCYx(200);
-
+           Delay10KTCYx(100);
         }
     }
 }
