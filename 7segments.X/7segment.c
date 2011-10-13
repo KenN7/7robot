@@ -53,13 +53,13 @@ void low_interrupt(void)
 #pragma interrupt high_isr
 void high_isr(void)
 {
-/*    if (INTCONbits.RBIE && INTCONbits.RBIF)
+    if (INTCONbits.RBIE && INTCONbits.RBIF)
     {
         PORTBbits.RB2 = PORTBbits.RB2^1;
         PORTBbits.RB3 = PORTBbits.RB3^1;
 
         INTCONbits.RBIF = 0 ;
-    }*/
+    }
    
 }
 
@@ -99,9 +99,9 @@ void main (void)
     TRISBbits.RB2 = 0;
     TRISBbits.RB3 = 0; // multiplexing with transistors in output
 
-     //RCONbits.IPEN = 1;
-
-   // INTCONbits.GIEL = 1;
+    RCONbits.IPEN = 1;
+    INTCONbits.GIEL = 1;
+    INTCONbits.GIEH = 1;
     
 
     
@@ -110,14 +110,16 @@ void main (void)
                 T0_16BIT &
                 T0_SOURCE_INT &
                 T0_PS_1_1 );
-
+    INTCON2bits.TMR0IP = 0;     //Set the Timer0 interrupts as low
+    
  /*  OpenTimer2( TIMER_INT_ON &
                T2_PS_1_1 &
                T2_POST_1_1); */
 
-  /* OpenRB1INT( PORTB_CHANGE_INT_ON &
+   OpenRB1INT( PORTB_CHANGE_INT_ON &
                RISING_EDGE_INT &
-               PORTB_PULLUPS_OFF); */
+               PORTB_PULLUPS_OFF);
+   INTCON2bits.RBIP = 1;
 
 WriteTimer0(65535-1000);
 
