@@ -53,12 +53,12 @@ void low_interrupt(void)
 #pragma interrupt high_isr
 void high_isr(void)
 {
-    if (INTCONbits.RBIE && INTCONbits.RBIF)
+    if (INTCON3bits.INT1IE && INTCON3bits.INT1IF)
     {
         PORTBbits.RB2 = PORTBbits.RB2^1;
         PORTBbits.RB3 = PORTBbits.RB3^1;
 
-        INTCONbits.RBIF = 0 ;
+        INTCON3bits.INT1IF = 0 ;
     }
    
 }
@@ -77,6 +77,7 @@ if (PIE1bits.TMR2IE && PIR1bits.TMR2IF) {
     PIR1bits.TMR2IF = 0;
     }
 
+
 }
 
 
@@ -91,8 +92,8 @@ void main (void)
     OSCCON  = 0b01101111; //oscillator to 1mhz 
     UCON    = 0 ;           /* Désactive l'USB. */
     UCFG    = 0b00001000 ;
-    TRISA   = 0b01000000 ;
-    TRISBbits.RB0 = 0 ; // leds in output
+    TRISA   = 0b01000000 ;  // segments leds in output
+    TRISBbits.RB0 = 0 ;
 
     TRISBbits.RB1 = 1; //pin of the button
 
@@ -107,9 +108,9 @@ void main (void)
     
 
     OpenTimer0( TIMER_INT_ON &
-                T0_16BIT &
                 T0_SOURCE_INT &
                 T0_PS_1_1 );
+
     INTCON2bits.TMR0IP = 0;     //Set the Timer0 interrupts as low
     
  /*  OpenTimer2( TIMER_INT_ON &
@@ -118,8 +119,9 @@ void main (void)
 
    OpenRB1INT( PORTB_CHANGE_INT_ON &
                RISING_EDGE_INT &
-               PORTB_PULLUPS_OFF);
-   INTCON2bits.RBIP = 1;
+               PORTB_PULLUPS_OFF);  
+   
+    INTCON3bits.INT1IP = 1;
 
 WriteTimer0(65535-1000);
 
