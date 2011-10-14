@@ -4,6 +4,7 @@
 #include <delays.h>
 #include <timers.h>
 #include <portb.h>
+#include <math.h>
 
 
 /////*CONFIGURATION*/////
@@ -27,6 +28,8 @@
  long timems = 0;
  int aff = 0;
  long chiffre = 0;
+ int retenue = 0;
+ double calcul;
 
 /////*PROTOTYPES*/////
 
@@ -57,8 +60,9 @@ void low_interrupt(void)
 void high_isr(void)
 {
      if (INTCONbits.TMR0IE && INTCONbits.TMR0IF) {
-    timems++;
-    WriteTimer0(65535-1000); // 1000 cycles corresponds to 1ms
+         retenue++;
+
+   // WriteTimer0(65535-1000); // 1000 cycles corresponds to 1ms
     INTCONbits.TMR0IF = 0;
     }
    
@@ -71,6 +75,7 @@ void low_isr(void)
 
 if (PIE1bits.TMR2IE && PIR1bits.TMR2IF) {
     caract(chiffre);
+    timems = ReadTimer0()*256/1000;// + retenue*(2^24)/1000;
     if (timems >= 10000) timems = 0;
     if (aff) {
         PORTBbits.RB2 = 1; //transitors pins for multiplexing
@@ -129,7 +134,7 @@ void main (void)
    OpenTimer0( TIMER_INT_ON &
                T0_16BIT &
                T0_SOURCE_INT &
-               T0_PS_1_1 );
+               T0_PS_1_256 );
 
     INTCON2bits.TMR0IP = 1;     //Set the Timer0 interrupts as high
     
@@ -152,7 +157,7 @@ void main (void)
 //Début Programme
 
     while(1){
-        
+       
     }
 }
 
