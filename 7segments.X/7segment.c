@@ -25,6 +25,9 @@
 
  int i;
  long timems = 0;
+ int aff = 0;
+ long chiffre = 0;
+
 /////*PROTOTYPES*/////
 
 void high_isr(void);
@@ -53,30 +56,46 @@ void low_interrupt(void)
 #pragma interrupt high_isr
 void high_isr(void)
 {
-    if (INTCON3bits.INT1IE && INTCON3bits.INT1IF)
-    {
-        PORTBbits.RB2 = PORTBbits.RB2^1;
-        PORTBbits.RB3 = PORTBbits.RB3^1;
-
-        INTCON3bits.INT1IF = 0 ;
+     if (INTCONbits.TMR0IE && INTCONbits.TMR0IF) {
+    timems++;
+    WriteTimer0(65535-1000); // 1000 cycles corresponds to 1ms
+    INTCONbits.TMR0IF = 0;
     }
+   
    
 }
 
 #pragma interrupt low_isr
 void low_isr(void)
 {
- if (INTCONbits.TMR0IE && INTCONbits.TMR0IF) {
-    timems++;
-    WriteTimer0(65535-1000); // 1000 cycles corresponds to 1ms
-    INTCONbits.TMR0IF = 0;
-    }
 
 if (PIE1bits.TMR2IE && PIR1bits.TMR2IF) {
+    caract(chiffre);
+    if (timems >= 10000) timems = 0;
+    if (aff) {
+        PORTBbits.RB2 = 1; //transitors pins for multiplexing
+        PORTBbits.RB3 = 0;
+
+        chiffre = (timems%1000)/100;
+    }
+    else {
+        PORTBbits.RB2 = 0; //transitors pins for multiplexing
+        PORTBbits.RB3 = 1;
+        
+        chiffre = (timems)/1000;
+    }
+    
+    aff = aff^1;
 
     PIR1bits.TMR2IF = 0;
     }
 
+  if (INTCON3bits.INT1IE && INTCON3bits.INT1IF)
+    {
+        INTCONbits.TMR0IE = INTCONbits.TMR0IE^1;
+
+        INTCON3bits.INT1IF = 0;
+    }
 
 }
 
@@ -89,7 +108,7 @@ void main (void)
     ADCON0  = 0b00000000;
     ADCON1  = 0b00001111;
     WDTCON  = 0 ;
-    OSCCON  = 0b01101111; //oscillator to 1mhz 
+    OSCCON  = 0b01101111;  //oscillator to 4mhz
     UCON    = 0 ;           /* Désactive l'USB. */
     UCFG    = 0b00001000 ;
     TRISA   = 0b01000000 ;  // segments leds in output
@@ -107,36 +126,33 @@ void main (void)
 
     
 
-    OpenTimer0( TIMER_INT_ON &
-                T0_SOURCE_INT &
-                T0_PS_1_1 );
+   OpenTimer0( TIMER_INT_ON &
+               T0_16BIT &
+               T0_SOURCE_INT &
+               T0_PS_1_1 );
 
-    INTCON2bits.TMR0IP = 0;     //Set the Timer0 interrupts as low
+    INTCON2bits.TMR0IP = 1;     //Set the Timer0 interrupts as high
     
- /*  OpenTimer2( TIMER_INT_ON &
-               T2_PS_1_1 &
-               T2_POST_1_1); */
+   OpenTimer2( TIMER_INT_ON &
+               T2_PS_1_16 &
+               T2_POST_1_1);
 
-   OpenRB1INT( PORTB_CHANGE_INT_ON &
+   IPR1bits.TMR2IP = 0;
+
+  OpenRB1INT( PORTB_CHANGE_INT_ON &
                RISING_EDGE_INT &
                PORTB_PULLUPS_OFF);  
    
-    INTCON3bits.INT1IP = 1;
-
-WriteTimer0(65535-1000);
+    INTCON3bits.INT1IP = 0;
 
 //Variables Globales
 
-    PORTBbits.RB2 = 1; //transitors pins for multiplexing
-    PORTBbits.RB3 = 0;
+    
 
 //Début Programme
 
     while(1){
-        for (i = 0; i<10; i++) {
-           caract(i);
-           Delay10KTCYx(100);
-        }
+        
     }
 }
 
@@ -176,7 +192,7 @@ void caract(char i)
          case 9 : PORTA = 0b00010000;
                   PORTBbits.RB0 = 0;
         break;
-        /* case o : PORTA = 0b00011100;
+        /* case 'o' : PORTA = 0b00011100;
                   PORTBbits.RB0 = 1;
         break; */
     }
