@@ -71,22 +71,32 @@ void low_isr(void)
 {
 
 if (PIE1bits.TMR2IE && PIR1bits.TMR2IF) {
-   caract(chiffre);
-    if (timems >= 10000) timems = 0;
-    if (aff) { //lets choose one
-        PORTBbits.RB2 = 1; //transitors pins for multiplexing
-        PORTBbits.RB3 = 0;
+   
+    //if (timems >= 10000) timems = 0;
+    if (aff == 0) { //lets choose one
 
         chiffre = (timems/100)%10;
-    }
-    else {
+        caract(chiffre);
         PORTBbits.RB2 = 0; //transitors pins for multiplexing
         PORTBbits.RB3 = 1;
-
-        chiffre = (timems/1000)%10;
+        PORTBbits.RB4 = 0;
     }
+    if (aff == 1) {
+        chiffre = (timems/1000)%10;
+        caract(chiffre);
+        PORTBbits.RB2 = 1; //transitors pins for multiplexing
+        PORTBbits.RB3 = 0;
+        PORTBbits.RB4 = 0;
+    }
+    if (aff == 2) {
+        chiffre = (timems/10000)%10;
+            caract(chiffre);
+        PORTBbits.RB2 = 0; //transitors pins for multiplexing
+        PORTBbits.RB3 = 0;
+        PORTBbits.RB4 = 1;
+   }
 
-    aff = aff^1;
+    aff = (aff+1)%3;
 
     PIR1bits.TMR2IF = 0;
     }
@@ -119,6 +129,7 @@ void main (void)
 
     TRISBbits.RB2 = 0;
     TRISBbits.RB3 = 0; // multiplexing with transistors in output
+    TRISBbits.RB4 = 0;
 
     RCONbits.IPEN = 1;
     INTCONbits.GIEL = 1;
