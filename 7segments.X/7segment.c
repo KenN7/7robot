@@ -28,8 +28,11 @@
  long timems = 0;
  int aff = 0;
  long chiffre = 0;
+<<<<<<< HEAD
  int retenue = 0;
  double calcul;
+=======
+>>>>>>> cf25281... version qui marche mais trop lentement
 
 /////*PROTOTYPES*/////
 
@@ -60,9 +63,14 @@ void low_interrupt(void)
 void high_isr(void)
 {
      if (INTCONbits.TMR0IE && INTCONbits.TMR0IF) {
+<<<<<<< HEAD
          retenue++;
 
    // WriteTimer0(65535-1000); // 1000 cycles corresponds to 1ms
+=======
+    timems++;
+    WriteTimer0(65535-1000); // 1000 cycles corresponds to 1ms
+>>>>>>> cf25281... version qui marche mais trop lentement
     INTCONbits.TMR0IF = 0;
     }
    
@@ -75,7 +83,10 @@ void low_isr(void)
 
 if (PIE1bits.TMR2IE && PIR1bits.TMR2IF) {
     caract(chiffre);
+<<<<<<< HEAD
     timems = ReadTimer0()*256/1000;// + retenue*(2^24)/1000;
+=======
+>>>>>>> cf25281... version qui marche mais trop lentement
     if (timems >= 10000) timems = 0;
     if (aff) {
         PORTBbits.RB2 = 1; //transitors pins for multiplexing
@@ -134,16 +145,26 @@ void main (void)
    OpenTimer0( TIMER_INT_ON &
                T0_16BIT &
                T0_SOURCE_INT &
+<<<<<<< HEAD
                T0_PS_1_256 );
+=======
+               T0_PS_1_1 );
+>>>>>>> cf25281... version qui marche mais trop lentement
 
     INTCON2bits.TMR0IP = 1;     //Set the Timer0 interrupts as high
     
    OpenTimer2( TIMER_INT_ON &
                T2_PS_1_16 &
                T2_POST_1_1);
+<<<<<<< HEAD
 
    IPR1bits.TMR2IP = 0;
 
+=======
+
+   IPR1bits.TMR2IP = 0;
+
+>>>>>>> cf25281... version qui marche mais trop lentement
   OpenRB1INT( PORTB_CHANGE_INT_ON &
                RISING_EDGE_INT &
                PORTB_PULLUPS_OFF);  
@@ -157,7 +178,11 @@ void main (void)
 //Début Programme
 
     while(1){
+<<<<<<< HEAD
        
+=======
+        
+>>>>>>> cf25281... version qui marche mais trop lentement
     }
 }
 
