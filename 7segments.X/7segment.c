@@ -8,8 +8,9 @@
 
 /////*CONFIGURATION*/////
 #pragma config FOSC = HS
-#pragma config FCMEN = ON
+#pragma config FCMEN = OFF
 #pragma config IESO = OFF
+#pragma config CPUDIV = OSC1_PLL2 //must use external 16mhz oscillator
 #pragma config PWRT = OFF
 #pragma config BOR = ON
 #pragma config BORV = 2
@@ -58,7 +59,7 @@ void high_isr(void)
 {
      if (INTCONbits.TMR0IE && INTCONbits.TMR0IF) {
     timems++;
-    WriteTimer0(65535-1000); // 1000 cycles corresponds to 1ms
+    WriteTimer0(65535-4000); // 4000 cycles correspond to 1ms
     INTCONbits.TMR0IF = 0;
     }
 
@@ -70,19 +71,19 @@ void low_isr(void)
 {
 
 if (PIE1bits.TMR2IE && PIR1bits.TMR2IF) {
-    caract(chiffre);
+   caract(chiffre);
     if (timems >= 10000) timems = 0;
-    if (aff) {
+    if (aff) { //lets choose one
         PORTBbits.RB2 = 1; //transitors pins for multiplexing
         PORTBbits.RB3 = 0;
 
-        chiffre = (timems%1000)/100;
+        chiffre = (timems/100)%10;
     }
     else {
         PORTBbits.RB2 = 0; //transitors pins for multiplexing
         PORTBbits.RB3 = 1;
 
-        chiffre = (timems)/1000;
+        chiffre = (timems/1000)%10;
     }
 
     aff = aff^1;
@@ -90,7 +91,7 @@ if (PIE1bits.TMR2IE && PIR1bits.TMR2IF) {
     PIR1bits.TMR2IF = 0;
     }
 
-  if (INTCON3bits.INT1IE && INTCON3bits.INT1IF)
+  if (INTCON3bits.INT1IE && INTCON3bits.INT1IF) //on button pression pause timer
     {
         INTCONbits.TMR0IE = INTCONbits.TMR0IE^1;
 
@@ -108,7 +109,7 @@ void main (void)
     ADCON0  = 0b00000000;
     ADCON1  = 0b00001111;
     WDTCON  = 0 ;
-    OSCCON  = 0b01101111;  //oscillator to 4mhz
+   // OSCCON  = 0b01111111;  //oscillator to 8mhz
     UCON    = 0 ;           /* Désactive l'USB. */
     UCFG    = 0b00001000 ;
     TRISA   = 0b01000000 ;  // segments leds in output
@@ -134,7 +135,7 @@ void main (void)
     INTCON2bits.TMR0IP = 1;     //Set the Timer0 interrupts as high
 
    OpenTimer2( TIMER_INT_ON &
-               T2_PS_1_16 &
+               T2_PS_1_1 &
                T2_POST_1_1);
 
    IPR1bits.TMR2IP = 0;
@@ -152,7 +153,7 @@ void main (void)
 //Début Programme
 
     while(1){
-
+ 
     }
 }
 
