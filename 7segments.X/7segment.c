@@ -26,6 +26,7 @@
 
  int i;
  long timems = 0;
+<<<<<<< HEAD
  int aff = 0;
  long chiffre = 0;
 <<<<<<< HEAD
@@ -34,6 +35,8 @@
 =======
 >>>>>>> cf25281... version qui marche mais trop lentement
 
+=======
+>>>>>>> parent of cf25281... version qui marche mais trop lentement
 /////*PROTOTYPES*/////
 
 void high_isr(void);
@@ -62,6 +65,7 @@ void low_interrupt(void)
 #pragma interrupt high_isr
 void high_isr(void)
 {
+<<<<<<< HEAD
      if (INTCONbits.TMR0IE && INTCONbits.TMR0IF) {
 <<<<<<< HEAD
          retenue++;
@@ -72,16 +76,29 @@ void high_isr(void)
     WriteTimer0(65535-1000); // 1000 cycles corresponds to 1ms
 >>>>>>> cf25281... version qui marche mais trop lentement
     INTCONbits.TMR0IF = 0;
+=======
+    if (INTCON3bits.INT1IE && INTCON3bits.INT1IF)
+    {
+        PORTBbits.RB2 = PORTBbits.RB2^1;
+        PORTBbits.RB3 = PORTBbits.RB3^1;
+
+        INTCON3bits.INT1IF = 0 ;
+>>>>>>> parent of cf25281... version qui marche mais trop lentement
     }
-   
    
 }
 
 #pragma interrupt low_isr
 void low_isr(void)
 {
+ if (INTCONbits.TMR0IE && INTCONbits.TMR0IF) {
+    timems++;
+    WriteTimer0(65535-1000); // 1000 cycles corresponds to 1ms
+    INTCONbits.TMR0IF = 0;
+    }
 
 if (PIE1bits.TMR2IE && PIR1bits.TMR2IF) {
+<<<<<<< HEAD
     caract(chiffre);
 <<<<<<< HEAD
     timems = ReadTimer0()*256/1000;// + retenue*(2^24)/1000;
@@ -102,16 +119,12 @@ if (PIE1bits.TMR2IE && PIR1bits.TMR2IF) {
     }
     
     aff = aff^1;
+=======
+>>>>>>> parent of cf25281... version qui marche mais trop lentement
 
     PIR1bits.TMR2IF = 0;
     }
 
-  if (INTCON3bits.INT1IE && INTCON3bits.INT1IF)
-    {
-        INTCONbits.TMR0IE = INTCONbits.TMR0IE^1;
-
-        INTCON3bits.INT1IF = 0;
-    }
 
 }
 
@@ -124,7 +137,7 @@ void main (void)
     ADCON0  = 0b00000000;
     ADCON1  = 0b00001111;
     WDTCON  = 0 ;
-    OSCCON  = 0b01101111;  //oscillator to 4mhz
+    OSCCON  = 0b01101111; //oscillator to 1mhz 
     UCON    = 0 ;           /* Désactive l'USB. */
     UCFG    = 0b00001000 ;
     TRISA   = 0b01000000 ;  // segments leds in output
@@ -142,6 +155,7 @@ void main (void)
 
     
 
+<<<<<<< HEAD
    OpenTimer0( TIMER_INT_ON &
                T0_16BIT &
                T0_SOURCE_INT &
@@ -150,9 +164,15 @@ void main (void)
 =======
                T0_PS_1_1 );
 >>>>>>> cf25281... version qui marche mais trop lentement
+=======
+    OpenTimer0( TIMER_INT_ON &
+                T0_SOURCE_INT &
+                T0_PS_1_1 );
+>>>>>>> parent of cf25281... version qui marche mais trop lentement
 
-    INTCON2bits.TMR0IP = 1;     //Set the Timer0 interrupts as high
+    INTCON2bits.TMR0IP = 0;     //Set the Timer0 interrupts as low
     
+<<<<<<< HEAD
    OpenTimer2( TIMER_INT_ON &
                T2_PS_1_16 &
                T2_POST_1_1);
@@ -166,23 +186,40 @@ void main (void)
 
 >>>>>>> cf25281... version qui marche mais trop lentement
   OpenRB1INT( PORTB_CHANGE_INT_ON &
+=======
+ /*  OpenTimer2( TIMER_INT_ON &
+               T2_PS_1_1 &
+               T2_POST_1_1); */
+
+   OpenRB1INT( PORTB_CHANGE_INT_ON &
+>>>>>>> parent of cf25281... version qui marche mais trop lentement
                RISING_EDGE_INT &
                PORTB_PULLUPS_OFF);  
    
-    INTCON3bits.INT1IP = 0;
+    INTCON3bits.INT1IP = 1;
+
+WriteTimer0(65535-1000);
 
 //Variables Globales
 
-    
+    PORTBbits.RB2 = 1; //transitors pins for multiplexing
+    PORTBbits.RB3 = 0;
 
 //Début Programme
 
     while(1){
 <<<<<<< HEAD
+<<<<<<< HEAD
        
 =======
         
 >>>>>>> cf25281... version qui marche mais trop lentement
+=======
+        for (i = 0; i<10; i++) {
+           caract(i);
+           Delay10KTCYx(100);
+        }
+>>>>>>> parent of cf25281... version qui marche mais trop lentement
     }
 }
 
@@ -222,7 +259,7 @@ void caract(char i)
          case 9 : PORTA = 0b00010000;
                   PORTBbits.RB0 = 0;
         break;
-        /* case 'o' : PORTA = 0b00011100;
+        /* case o : PORTA = 0b00011100;
                   PORTBbits.RB0 = 1;
         break; */
     }
