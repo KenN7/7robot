@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=BAT Pin=S1-2
+Removed Pin From Net: NetName=BAT Pin=S1-5
+Removed Member From Class: ClassName=puissance Member=S1
+Added Pin To Net: NetName=BAT Pin=Dred1-2
+Added Pin To Net: NetName=BAT Pin=Dred2-2

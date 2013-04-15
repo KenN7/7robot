@@ -1,0 +1,102 @@
+Added Component: Designator=Batterie(Bornier male coude 2 voies)
+Added Component: Designator=Cre1(RB.1/.3)
+Added Component: Designator=Creg2(RB.1/.3)
+Added Component: Designator=Creg12(RB.1/.3)
+Added Component: Designator=Creg22(RB.1/.3)
+Added Component: Designator=D1(LED 5mm red (dip))
+Added Component: Designator=Dred1(DO-41)
+Added Component: Designator=Dred2(DO-41)
+Added Component: Designator=K1(DIP-P8)
+Added Component: Designator=P1(Bornier male coude 2 voies)
+Added Component: Designator=P2(Bornier male coude 2 voies)
+Added Component: Designator=P3(Bornier male coude 2 voies)
+Added Component: Designator=P4(Bornier male coude 2 voies)
+Added Component: Designator=P5(Bornier male coude 2 voies)
+Added Component: Designator=P6(Bornier male coude 2 voies)
+Added Component: Designator=Q1(TO-92A)
+Added Component: Designator=R1(AXIAL-0.4)
+Added Component: Designator=R2(AXIAL0.8)
+Added Component: Designator=RegulAAH(5V)(PTB78560x)
+Added Component: Designator=RegulCAH(10V)(PTB78560x)
+Added Component: Designator=Rset1(AXIAL0.8)
+Added Component: Designator=Rset2(AXIAL0.8)
+Added Component: Designator=S1(MCLSS22)
+Added Pin To Net: NetName=5V Pin=Creg22-1
+Added Pin To Net: NetName=5V Pin=K1-1
+Added Pin To Net: NetName=5V Pin=K1-7
+Added Pin To Net: NetName=5V Pin=P1-1
+Added Pin To Net: NetName=5V Pin=P2-1
+Added Pin To Net: NetName=5V Pin=R2-1
+Added Pin To Net: NetName=5V Pin=RegulAAH(5V)-9
+Added Pin To Net: NetName=5V Pin=RegulAAH(5V)-10
+Added Net: Name=5V
+Added Pin To Net: NetName=10V Pin=Creg12-1
+Added Pin To Net: NetName=10V Pin=P3-1
+Added Pin To Net: NetName=10V Pin=P4-1
+Added Pin To Net: NetName=10V Pin=RegulCAH(10V)-9
+Added Pin To Net: NetName=10V Pin=RegulCAH(10V)-10
+Added Net: Name=10V
+Added Pin To Net: NetName=BAT Pin=Cre1-1
+Added Pin To Net: NetName=BAT Pin=Creg2-1
+Added Pin To Net: NetName=BAT Pin=RegulAAH(5V)-1
+Added Pin To Net: NetName=BAT Pin=RegulCAH(10V)-1
+Added Pin To Net: NetName=BAT Pin=S1-2
+Added Pin To Net: NetName=BAT Pin=S1-5
+Added Net: Name=BAT
+Added Pin To Net: NetName=GND Pin=Batterie-1
+Added Pin To Net: NetName=GND Pin=Cre1-2
+Added Pin To Net: NetName=GND Pin=Creg2-2
+Added Pin To Net: NetName=GND Pin=Creg12-2
+Added Pin To Net: NetName=GND Pin=Creg22-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P3-2
+Added Pin To Net: NetName=GND Pin=P4-2
+Added Pin To Net: NetName=GND Pin=P5-2
+Added Pin To Net: NetName=GND Pin=P6-2
+Added Pin To Net: NetName=GND Pin=Q1-1
+Added Pin To Net: NetName=GND Pin=RegulAAH(5V)-3
+Added Pin To Net: NetName=GND Pin=RegulAAH(5V)-4
+Added Pin To Net: NetName=GND Pin=RegulAAH(5V)-6
+Added Pin To Net: NetName=GND Pin=RegulAAH(5V)-7
+Added Pin To Net: NetName=GND Pin=RegulCAH(10V)-3
+Added Pin To Net: NetName=GND Pin=RegulCAH(10V)-4
+Added Pin To Net: NetName=GND Pin=RegulCAH(10V)-6
+Added Pin To Net: NetName=GND Pin=RegulCAH(10V)-7
+Added Pin To Net: NetName=GND Pin=Rset1-1
+Added Pin To Net: NetName=GND Pin=Rset2-1
+Added Net: Name=GND
+Added Pin To Net: NetName=NetBatterie_2 Pin=Batterie-2
+Added Pin To Net: NetName=NetBatterie_2 Pin=Dred1-1
+Added Pin To Net: NetName=NetBatterie_2 Pin=Dred2-1
+Added Net: Name=NetBatterie_2
+Added Pin To Net: NetName=NetD1_1 Pin=R2-2
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetDred1_2 Pin=Dred1-2
+Added Pin To Net: NetName=NetDred1_2 Pin=Dred2-2
+Added Pin To Net: NetName=NetDred1_2 Pin=S1-1
+Added Pin To Net: NetName=NetDred1_2 Pin=S1-4
+Added Net: Name=NetDred1_2
+Added Pin To Net: NetName=NetK1_8 Pin=K1-8
+Added Pin To Net: NetName=NetK1_8 Pin=Q1-3
+Added Net: Name=NetK1_8
+Added Pin To Net: NetName=NetQ1_2 Pin=Q1-2
+Added Pin To Net: NetName=NetQ1_2 Pin=R1-2
+Added Net: Name=NetQ1_2
+Added Pin To Net: NetName=NetRegulAAH(5V)_8 Pin=RegulAAH(5V)-8
+Added Pin To Net: NetName=NetRegulAAH(5V)_8 Pin=Rset2-2
+Added Net: Name=NetRegulAAH(5V)_8
+Added Pin To Net: NetName=NetRegulCAH(10V)_8 Pin=RegulCAH(10V)-8
+Added Pin To Net: NetName=NetRegulCAH(10V)_8 Pin=Rset1-2
+Added Net: Name=NetRegulCAH(10V)_8
+Added Pin To Net: NetName=NetS1_3 Pin=S1-3
+Added Pin To Net: NetName=NetS1_3 Pin=S1-6
+Added Net: Name=NetS1_3
+Added Pin To Net: NetName=PICFUNNY Pin=P5-1
+Added Pin To Net: NetName=PICFUNNY Pin=R1-1
+Added Net: Name=PICFUNNY
+Added Pin To Net: NetName=TURBINE Pin=K1-3
+Added Pin To Net: NetName=TURBINE Pin=P6-1
+Added Net: Name=TURBINE
+Added Class: Name=puissance
+Added Room: Name=puissance

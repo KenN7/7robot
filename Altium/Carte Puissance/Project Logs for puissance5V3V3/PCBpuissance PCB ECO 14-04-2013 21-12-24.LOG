@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=NetDEL_A Pin=DEL-A
+Removed Member From Class: ClassName=puissance Member=DEL
+Added Component: Designator=D1(LED 5mm red (dip))
+Added Pin To Net: NetName=NetDEL_A Pin=D1-A
+Added Pin To Net: NetName=GND Pin=D1-K
+Change Net Name : Old Net Name=NetDEL_A New Net Name=NetD1_A
+Added Member To Class: ClassName=puissance Member=Component D1 LED
