@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=5V Pin=K1-1
+Removed Pin From Net: NetName=TURBINE Pin=K1-3
+Removed Pin From Net: NetName=5V Pin=K1-7
+Removed Pin From Net: NetName=NetK1_8 Pin=K1-8
+Removed Member From Class: ClassName=puissance Member=K1
+Added Component: Designator=Krelay(MODULE4)
+Added Pin To Net: NetName=5V Pin=Krelay-1
+Added Pin To Net: NetName=TURBINE Pin=Krelay-2
+Added Pin To Net: NetName=5V Pin=Krelay-3
+Added Pin To Net: NetName=NetK1_8 Pin=Krelay-4
+Change Net Name : Old Net Name=NetK1_8 New Net Name=NetKrelay_4
+Added Member To Class: ClassName=puissance Member=Component Krelay Relay-SPST
+Added Room: Name=puissance

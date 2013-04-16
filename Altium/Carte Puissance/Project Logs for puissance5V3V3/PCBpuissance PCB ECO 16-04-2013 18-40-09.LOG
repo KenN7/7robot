@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=TURBINE Pin=K?-0
+Removed Pin From Net: NetName=5V Pin=K?-4
+Added Pin To Net: NetName=TURBINE Pin=K?-2

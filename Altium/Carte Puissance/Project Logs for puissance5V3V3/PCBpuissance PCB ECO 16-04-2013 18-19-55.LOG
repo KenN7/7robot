@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=NetKrelay_3 Pin=Krelay-3
+Removed Pin From Net: NetName=5V Pin=Krelay-4
+Added Pin To Net: NetName=NetKrelay_3 Pin=Krelay-4
+Change Net Name : Old Net Name=NetKrelay_3 New Net Name=NetKrelay_4

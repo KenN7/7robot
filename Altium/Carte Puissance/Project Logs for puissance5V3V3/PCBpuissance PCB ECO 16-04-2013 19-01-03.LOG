@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=5V Pin=K?-0
+Removed Pin From Net: NetName=5V Pin=K?-1
+Removed Pin From Net: NetName=TURBINE Pin=K?-2
+Removed Member From Class: ClassName=puissance Member=K?
+Added Component: Designator=HOLE1(SCREW)
+Added Component: Designator=HOLE2(SCREW)
+Added Component: Designator=HOLE3(SCREW)
+Added Component: Designator=K1(relay-SPST)
+Added Pin To Net: NetName=5V Pin=K1-0
+Added Pin To Net: NetName=5V Pin=K1-1
+Added Pin To Net: NetName=TURBINE Pin=K1-2
+Added Pin To Net: NetName=NetK1_3 Pin=K1-3
+Added Pin To Net: NetName=NetK1_3 Pin=Q1-3
+Added Net: Name=NetK1_3
+Added Member To Class: ClassName=puissance Member=Component HOLE1 Hole
+Added Member To Class: ClassName=puissance Member=Component HOLE2 Hole
+Added Member To Class: ClassName=puissance Member=Component HOLE3 Hole
+Added Member To Class: ClassName=puissance Member=Component K1 Relay-SPDT
+Added Room: Name=puissance
