@@ -1,0 +1,16 @@
+Added Member To Class: ClassName=puissance Member=Component Batterie bornier
+Added Member To Class: ClassName=puissance Member=Component Cre1 CAP Pol
+Added Member To Class: ClassName=puissance Member=Component Creg2 CAP Pol
+Added Member To Class: ClassName=puissance Member=Component Creg12 CAP Pol
+Added Member To Class: ClassName=puissance Member=Component Creg22 CAP Pol
+Added Member To Class: ClassName=puissance Member=Component D1 LED
+Added Member To Class: ClassName=puissance Member=Component Dred1 Diode 1N4001
+Added Member To Class: ClassName=puissance Member=Component Dred2 Diode 1N4001
+Added Member To Class: ClassName=puissance Member=Component K1 Relay-DPDT
+Added Member To Class: ClassName=puissance Member=Component Q1 2N3904
+Added Member To Class: ClassName=puissance Member=Component R1 Res2
+Added Member To Class: ClassName=puissance Member=Component R2 RES
+Added Member To Class: ClassName=puissance Member=Component RegulAAH(5V) PTB78560x
+Added Member To Class: ClassName=puissance Member=Component RegulCAH(10V) PTB78560x
+Added Member To Class: ClassName=puissance Member=Component Rset1 RES
+Added Member To Class: ClassName=puissance Member=Component Rset2 RES

@@ -1,0 +1,20 @@
+Added Component: Designator=RegulAAH(5V)(PTB78560x)
+Added Component: Designator=RegulCAH(10V)(PTB78560x)
+Added Pin To Net: NetName=BAT Pin=RegulAAH(5V)-1
+Added Pin To Net: NetName=GND Pin=RegulAAH(5V)-3
+Added Pin To Net: NetName=GND Pin=RegulAAH(5V)-4
+Added Pin To Net: NetName=GND Pin=RegulAAH(5V)-6
+Added Pin To Net: NetName=GND Pin=RegulAAH(5V)-7
+Added Pin To Net: NetName=NetRegulAAH(5V)_8 Pin=RegulAAH(5V)-8
+Added Pin To Net: NetName=5V Pin=RegulAAH(5V)-9
+Added Pin To Net: NetName=5V Pin=RegulAAH(5V)-10
+Added Pin To Net: NetName=BAT Pin=RegulCAH(10V)-1
+Added Pin To Net: NetName=GND Pin=RegulCAH(10V)-3
+Added Pin To Net: NetName=GND Pin=RegulCAH(10V)-4
+Added Pin To Net: NetName=GND Pin=RegulCAH(10V)-6
+Added Pin To Net: NetName=GND Pin=RegulCAH(10V)-7
+Added Pin To Net: NetName=NetRegulCAH(10V)_8 Pin=RegulCAH(10V)-8
+Added Pin To Net: NetName=10V Pin=RegulCAH(10V)-9
+Added Pin To Net: NetName=10V Pin=RegulCAH(10V)-10
+Added Member To Class: ClassName=puissance Member=Component RegulAAH(5V) PTB78560x
+Added Member To Class: ClassName=puissance Member=Component RegulCAH(10V) PTB78560x
