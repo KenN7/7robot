@@ -30,6 +30,9 @@ Used DCodes :
     D26
     D27
     D28
+    D29
+    D30
+    D31
 *************************************************************
 
 *************************************************************
@@ -44,9 +47,6 @@ Generating : Bottom Solder
 
 
 Used DCodes :
-    D29
-    D30
-    D31
     D32
     D33
     D34
@@ -59,6 +59,10 @@ Used DCodes :
     D41
     D42
     D43
+    D44
+    D45
+    D46
+    D47
 *************************************************************
 
 *************************************************************
@@ -79,26 +83,25 @@ Used DCodes :
 Generating : Drill Drawing
       File : PCBpuissance.GD1
 
-    Adding Drill Pair : Bottom Layer-Top Layer
+    Adding Drill Pair : Top Layer-Bottom Layer
 
     Adding Layer      : Drill Drawing
 
 
 Used DCodes :
-    D44
-    D45
+    D48
 *************************************************************
 
 *************************************************************
 Generating : Drill Guide
       File : PCBpuissance.GG1
 
-    Adding Drill Pair : Bottom Layer-Top Layer
+    Adding Drill Pair : Top Layer-Bottom Layer
 
     Adding Layer      : Drill Guide
 
 
 Used DCodes :
-    D44
+    D48
 *************************************************************
 
