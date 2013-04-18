@@ -1,0 +1,10 @@
+Change Component Designator: OldDesignator=P210V NewDesignator=P310V
+Added Component: Designator=P210V(Bornier male coude 2 voies)
+Added Component: Designator=P410V(Bornier male coude 2 voies)
+Added Pin To Net: NetName=10V Pin=P210V-1
+Added Pin To Net: NetName=GND Pin=P210V-2
+Added Pin To Net: NetName=10V Pin=P410V-1
+Added Pin To Net: NetName=GND Pin=P410V-2
+Added Member To Class: ClassName=puissance Member=Component P310V Header 2
+Added Member To Class: ClassName=puissance Member=Component P410V Header 2
+Added Room: Name=puissance
