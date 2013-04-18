@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=BAT Pin=Dred1-2
+Removed Pin From Net: NetName=BAT Pin=Dred2-2
+Added Component: Designator=Fusible general(Fuse Holder 5x20mm)
+Added Pin To Net: NetName=BAT Pin=Fusible general-2
+Added Pin To Net: NetName=BAT Pin=Fusible general-2
+Added Pin To Net: NetName=NetDred1_2 Pin=Dred1-2
+Added Pin To Net: NetName=NetDred1_2 Pin=Dred2-2
+Added Pin To Net: NetName=NetDred1_2 Pin=Fusible general-1
+Added Pin To Net: NetName=NetDred1_2 Pin=Fusible general-1
+Added Net: Name=NetDred1_2
+Added Member To Class: ClassName=puissance Member=Component Fusible general Fuse
+Added Member To Class: ClassName=puissance Member=Component P210V Header 2
+Added Room: Name=puissance
