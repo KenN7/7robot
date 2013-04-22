@@ -1,0 +1,7 @@
+Added Component: Designator=K1(RELAY-SPST)
+Added Pin To Net: NetName=5V Pin=K1-1
+Added Pin To Net: NetName=TURBINE Pin=K1-3
+Added Pin To Net: NetName=5V Pin=K1-4
+Added Pin To Net: NetName=NetK1_5 Pin=K1-5
+Added Member To Class: ClassName=puissance Member=Component K1 Relay-SPDT
+Added Room: Name=puissance

@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Ken\Documents\GitHub\7robot\Altium\Carte Puissance\PCBpuissance.PcbDoc
-Date     : 19/04/2013
-Time     : 08:53:30
+Date     : 22/04/2013
+Time     : 15:11:46
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
@@ -29,6 +29,16 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
 Rule Violations :2
 
 Processing Rule : Silkscreen Over Component Pads (Clearance=0.254mm) (All),(All)
+   Violation between Track (85.454mm,89.78mm)(105.754mm,89.78mm)  Top Overlay and 
+                     Pad K1-4(104.454mm,88.88mm)  Multi-Layer
+   Violation between Track (85.454mm,89.78mm)(105.754mm,89.78mm)  Top Overlay and 
+                     Pad K1-1(94.254mm,88.88mm)  Multi-Layer
+   Violation between Track (85.454mm,80.08mm)(85.454mm,89.78mm)  Top Overlay and 
+                     Pad K1-3(86.554mm,88.88mm)  Multi-Layer
+   Violation between Track (85.454mm,89.78mm)(105.754mm,89.78mm)  Top Overlay and 
+                     Pad K1-3(86.554mm,88.88mm)  Multi-Layer
+   Violation between Track (163.83mm,126.746mm)(163.83mm,128.016mm)  Top Overlay and 
+                     Pad P15V-1(165.354mm,125.25mm)  Multi-Layer
    Violation between Text "Fusible general" (75.501mm,143.396mm)  Top Overlay and 
                      Pad RegulCAH(10V)-3(95.631mm,143.637mm)  Multi-Layer
    Violation between Track (80.109mm,140.523mm)(81.109mm,140.523mm)  Top Overlay and 
@@ -65,22 +75,12 @@ Processing Rule : Silkscreen Over Component Pads (Clearance=0.254mm) (All),(All)
                      Pad P25V-2(165.608mm,116.038mm)  Multi-Layer
    Violation between Track (164.084mm,108.966mm)(173.482mm,108.966mm)  Top Overlay and 
                      Pad P25V-1(165.608mm,111.038mm)  Multi-Layer
-   Violation between Track (163.83mm,126.746mm)(163.83mm,128.016mm)  Top Overlay and 
-                     Pad P15V-2(165.354mm,129.5mm)  Multi-Layer
-   Violation between Track (163.83mm,131.572mm)(173.228mm,131.572mm)  Top Overlay and 
-                     Pad P15V-2(165.354mm,129.5mm)  Multi-Layer
-   Violation between Track (163.83mm,122.428mm)(173.228mm,122.428mm)  Top Overlay and 
-                     Pad P15V-1(165.354mm,124.5mm)  Multi-Layer
-   Violation between Track (65.405mm,157.988mm)(65.405mm,159.258mm)  Top Overlay and 
-                     Pad Batterie-2(63.881mm,156.504mm)  Multi-Layer
-   Violation between Track (56.007mm,154.432mm)(65.405mm,154.432mm)  Top Overlay and 
-                     Pad Batterie-2(63.881mm,156.504mm)  Multi-Layer
-   Violation between Track (56.007mm,163.576mm)(65.405mm,163.576mm)  Top Overlay and 
-                     Pad Batterie-1(63.881mm,161.504mm)  Multi-Layer
-   Violation between Track (84.582mm,88.265mm)(85.598mm,88.265mm)  Top Overlay and 
-                     Pad R1-2(86.614mm,88.265mm)  Multi-Layer
-   Violation between Track (77.47mm,88.265mm)(78.486mm,88.265mm)  Top Overlay and 
-                     Pad R1-1(76.454mm,88.265mm)  Multi-Layer
+   Violation between Track (82.55mm,85.979mm)(83.566mm,85.979mm)  Top Overlay and 
+                     Pad R1-2(84.582mm,85.979mm)  Multi-Layer
+   Violation between Track (85.454mm,80.08mm)(85.454mm,89.78mm)  Top Overlay and 
+                     Pad R1-2(84.582mm,85.979mm)  Multi-Layer
+   Violation between Track (75.438mm,85.979mm)(76.454mm,85.979mm)  Top Overlay and 
+                     Pad R1-1(74.422mm,85.979mm)  Multi-Layer
    Violation between Track (140.335mm,164.719mm)(141.605mm,164.719mm)  Top Overlay and 
                      Pad P210V-2(138.851mm,166.243mm)  Multi-Layer
    Violation between Track (136.779mm,164.719mm)(136.779mm,174.117mm)  Top Overlay and 
@@ -93,7 +93,9 @@ Processing Rule : Silkscreen Over Component Pads (Clearance=0.254mm) (All),(All)
                      Pad P410V-2(151.297mm,166.116mm)  Multi-Layer
    Violation between Track (158.369mm,164.592mm)(158.369mm,173.99mm)  Top Overlay and 
                      Pad P410V-1(156.297mm,166.116mm)  Multi-Layer
-Rule Violations :32
+   Violation between Track (65.405mm,157.988mm)(65.405mm,159.258mm)  Top Overlay and 
+                     Pad Batterie-1(63.881mm,160.754mm)  Multi-Layer
+Rule Violations :33
 
 Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
    Violation between Text "Fusible general" (75.501mm,143.396mm)  Top Overlay and 
@@ -115,7 +117,7 @@ Processing Rule : Clearance Constraint (Gap=0.3mm) (All),(All)
                      Pad Q1-1(79.502mm,94.107mm)  Multi-Layer
    Violation between Pad Q1-3(82.042mm,94.107mm)  Multi-Layer and 
                      Pad Q1-2(80.772mm,94.107mm)  Multi-Layer
-   Violation between Track (82.042mm,94.107mm)(85.09mm,94.107mm)  Bottom Layer and 
+   Violation between Track (82.042mm,94.107mm)(88.519mm,94.107mm)  Bottom Layer and 
                      Pad Q1-2(80.772mm,94.107mm)  Multi-Layer
 Rule Violations :3
 
@@ -123,5 +125,5 @@ Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (
 Rule Violations :0
 
 
-Violations Detected : 43
+Violations Detected : 44
 Time Elapsed        : 00:00:00
