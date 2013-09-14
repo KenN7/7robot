@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=GND Pin=Batterie-1
+Added Pin To Net: NetName=GND Pin=Batterie-2
+Added Pin To Net: NetName=NetBatterie_1 Pin=Batterie-1
+Added Pin To Net: NetName=NetBatterie_1 Pin=Dred1-1
+Added Pin To Net: NetName=NetBatterie_1 Pin=Dred2-1
+Added Net: Name=NetBatterie_1
+Added Room: Name=CarteAlimSch

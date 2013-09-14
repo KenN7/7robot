@@ -1,0 +1,84 @@
+Added Component: Designator=Batterie(Bornier male coude 2 voies)
+Added Component: Designator=Creg1(RAD-0.3)
+Added Component: Designator=Creg2(RAD-0.3)
+Added Component: Designator=Creg21(RB.1/.3)
+Added Component: Designator=Creg22(RB.1/.3)
+Added Component: Designator=D1(LED 5mm red (dip))
+Added Component: Designator=Dred1(DO-41)
+Added Component: Designator=Dred2(DO-41)
+Added Component: Designator=Fusible general(Fuse Holder 5x20mm)
+Added Component: Designator=HOLE1(SCREW)
+Added Component: Designator=HOLE2(SCREW)
+Added Component: Designator=HOLE3(SCREW)
+Added Component: Designator=P15V(Bornier male coude 2 voies)
+Added Component: Designator=P25V(Bornier male coude 2 voies)
+Added Component: Designator=P35V(Bornier male coude 2 voies)
+Added Component: Designator=P210V(Bornier male coude 2 voies)
+Added Component: Designator=P310V(Bornier male coude 2 voies)
+Added Component: Designator=P410V(Bornier male coude 2 voies)
+Added Component: Designator=R2(AXIAL0.8)
+Added Component: Designator=Regulator 5V0(PTN78020W)
+Added Component: Designator=Regulator 10V0(PTN78020W)
+Added Component: Designator=Rset1(AXIAL0.8)
+Added Component: Designator=Rset2(AXIAL0.8)
+Added Pin To Net: NetName=5V Pin=Creg21-1
+Added Pin To Net: NetName=5V Pin=P15V-1
+Added Pin To Net: NetName=5V Pin=P25V-1
+Added Pin To Net: NetName=5V Pin=P35V-1
+Added Pin To Net: NetName=5V Pin=R2-1
+Added Pin To Net: NetName=5V Pin=Regulator 5V0-5
+Added Pin To Net: NetName=5V Pin=Regulator 5V0-6
+Added Net: Name=5V
+Added Pin To Net: NetName=10V Pin=Creg22-1
+Added Pin To Net: NetName=10V Pin=P210V-1
+Added Pin To Net: NetName=10V Pin=P310V-1
+Added Pin To Net: NetName=10V Pin=P410V-1
+Added Pin To Net: NetName=10V Pin=Regulator 10V0-5
+Added Pin To Net: NetName=10V Pin=Regulator 10V0-6
+Added Net: Name=10V
+Added Pin To Net: NetName=BAT Pin=Creg1-2
+Added Pin To Net: NetName=BAT Pin=Creg2-2
+Added Pin To Net: NetName=BAT Pin=Fusible general-2
+Added Pin To Net: NetName=BAT Pin=Fusible general-2
+Added Pin To Net: NetName=BAT Pin=Regulator 5V0-2
+Added Pin To Net: NetName=BAT Pin=Regulator 10V0-2
+Added Net: Name=BAT
+Added Pin To Net: NetName=GND Pin=Batterie-1
+Added Pin To Net: NetName=GND Pin=Creg1-1
+Added Pin To Net: NetName=GND Pin=Creg2-1
+Added Pin To Net: NetName=GND Pin=Creg21-2
+Added Pin To Net: NetName=GND Pin=Creg22-2
+Added Pin To Net: NetName=GND Pin=D1-K
+Added Pin To Net: NetName=GND Pin=P15V-2
+Added Pin To Net: NetName=GND Pin=P25V-2
+Added Pin To Net: NetName=GND Pin=P35V-2
+Added Pin To Net: NetName=GND Pin=P210V-2
+Added Pin To Net: NetName=GND Pin=P310V-2
+Added Pin To Net: NetName=GND Pin=P410V-2
+Added Pin To Net: NetName=GND Pin=Regulator 5V0-1
+Added Pin To Net: NetName=GND Pin=Regulator 5V0-7
+Added Pin To Net: NetName=GND Pin=Regulator 10V0-1
+Added Pin To Net: NetName=GND Pin=Regulator 10V0-7
+Added Pin To Net: NetName=GND Pin=Rset1-1
+Added Pin To Net: NetName=GND Pin=Rset2-1
+Added Net: Name=GND
+Added Pin To Net: NetName=NetBatterie_2 Pin=Batterie-2
+Added Pin To Net: NetName=NetBatterie_2 Pin=Dred1-1
+Added Pin To Net: NetName=NetBatterie_2 Pin=Dred2-1
+Added Net: Name=NetBatterie_2
+Added Pin To Net: NetName=NetD1_A Pin=D1-A
+Added Pin To Net: NetName=NetD1_A Pin=R2-2
+Added Net: Name=NetD1_A
+Added Pin To Net: NetName=NetDred1_2 Pin=Dred1-2
+Added Pin To Net: NetName=NetDred1_2 Pin=Dred2-2
+Added Pin To Net: NetName=NetDred1_2 Pin=Fusible general-1
+Added Pin To Net: NetName=NetDred1_2 Pin=Fusible general-1
+Added Net: Name=NetDred1_2
+Added Pin To Net: NetName=NetRegulator 5V0_4 Pin=Regulator 5V0-4
+Added Pin To Net: NetName=NetRegulator 5V0_4 Pin=Rset1-2
+Added Net: Name=NetRegulator 5V0_4
+Added Pin To Net: NetName=NetRegulator 10V0_4 Pin=Regulator 10V0-4
+Added Pin To Net: NetName=NetRegulator 10V0_4 Pin=Rset2-2
+Added Net: Name=NetRegulator 10V0_4
+Added Class: Name=CarteAlimSch
+Added Room: Name=CarteAlimSch
