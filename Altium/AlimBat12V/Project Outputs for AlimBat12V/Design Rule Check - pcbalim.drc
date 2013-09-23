@@ -1,0 +1,76 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\nim\Documents\GitHub\7robot\Altium\AlimBat12V\pcbalim.PcbDoc
+Date     : 23/09/2013
+Time     : 23:24:28
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.3mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.3mm) (Max=30mm) (Preferred=0.3mm) (All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+   Violation between Text "Dred2" (62.382mm,171.552mm)  Top Overlay and 
+                     Arc (62.252mm,172.696mm)  Top Overlay
+   Violation between Text "Rset1" (92.71mm,146.406mm)  Top Overlay and 
+                     Track (97.663mm,146.812mm)(98.425mm,146.812mm)  Top Overlay
+   Violation between Text "Rset1" (92.71mm,146.406mm)  Top Overlay and 
+                     Track (98.425mm,147.828mm)(104.521mm,147.828mm)  Top Overlay
+   Violation between Text "Rset1" (92.71mm,146.406mm)  Top Overlay and 
+                     Track (98.425mm,145.796mm)(98.425mm,147.828mm)  Top Overlay
+Rule Violations :4
+
+Processing Rule : Silkscreen Over Component Pads (Clearance=0.254mm) (All),(All)
+   Violation between Track (61.468mm,166.878mm)(61.468mm,168.148mm)  Top Overlay and 
+                     Pad Batterie-1(59.944mm,169.644mm)  Multi-Layer
+   Violation between Track (75.499mm,156.508mm)(75.499mm,157.508mm)  Top Overlay and 
+                     Pad Fusible general-2(75.499mm,159.258mm)  Multi-Layer
+   Violation between Track (55.999mm,161.008mm)(55.999mm,162.008mm)  Top Overlay and 
+                     Pad Fusible general-1(55.499mm,159.258mm)  Multi-Layer
+   Violation between Text "Creg1" (76.429mm,170.155mm)  Top Overlay and 
+                     Pad HOLE1-1(73.66mm,170.942mm)  Multi-Layer
+   Violation between Track (125.984mm,161.856mm)(125.984mm,163.126mm)  Top Overlay and 
+                     Pad P15V-1(127.508mm,160.36mm)  Multi-Layer
+   Violation between Track (125.984mm,151.855mm)(125.984mm,153.125mm)  Top Overlay and 
+                     Pad P25V-1(127.508mm,150.359mm)  Multi-Layer
+   Violation between Track (125.984mm,141.854mm)(125.984mm,143.124mm)  Top Overlay and 
+                     Pad P35V-1(127.508mm,140.358mm)  Multi-Layer
+   Violation between Track (104.902mm,137.668mm)(106.172mm,137.668mm)  Top Overlay and 
+                     Pad P410V-1(103.406mm,136.144mm)  Multi-Layer
+   Violation between Track (116.84mm,137.668mm)(118.11mm,137.668mm)  Top Overlay and 
+                     Pad P310V-1(115.344mm,136.144mm)  Multi-Layer
+   Violation between Text "Rset1" (92.71mm,146.406mm)  Top Overlay and 
+                     Pad R2-2(96.393mm,146.812mm)  Multi-Layer
+Rule Violations :10
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
+   Violation between Hole Size Constraint (3.4mm > 2.54mm) : Pad HOLE2-1(129.413mm,132.969mm)  Multi-Layer
+   Violation between Hole Size Constraint (3.4mm > 2.54mm) : Pad HOLE1-1(73.66mm,170.942mm)  Multi-Layer
+   Violation between Hole Size Constraint (3.4mm > 2.54mm) : Pad HOLE3-1(129.413mm,170.942mm)  Multi-Layer
+Rule Violations :3
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net NetRegulator 5V0_4 Between Pad Regulator 5V0-4 (103.403,153.112mm) And Pad Rset1-2 (103.505,149.86mm)
+Rule Violations :1
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+
+Violations Detected : 18
+Time Elapsed        : 00:00:00
