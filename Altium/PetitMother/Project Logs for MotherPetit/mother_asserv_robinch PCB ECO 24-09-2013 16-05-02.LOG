@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=NetD4_1 Pin=R3-1
+Removed Pin From Net: NetName=3V3 Pin=R3-2
+Added Component: Designator=R3(C0805R)
+Added Pin To Net: NetName=NetD4_1 Pin=R3-1
+Added Pin To Net: NetName=NetR3_1 Pin=R3-1
+Added Pin To Net: NetName=3V3 Pin=R3-2
+Added Pin To Net: NetName=NetD12_1 Pin=R3-2
+Added Member To Class: ClassName=motherpetit Member=Component R3 

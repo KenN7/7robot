@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=NetD4_1 Pin=R3-1
+Removed Pin From Net: NetName=3V3 Pin=R3-2
+Change Component Designator: OldDesignator=R3 NewDesignator=Rleddebug
+Added Component: Designator=R3(C0805R)
+Added Pin To Net: NetName=NetD4_1 Pin=R3-1
+Added Pin To Net: NetName=3V3 Pin=R3-2
+Added Pin To Net: NetName=NetD12_1 Pin=Rleddebug-2
+Added Pin To Net: NetName=NetRleddebug_1 Pin=Rleddebug-1
+Added Pin To Net: NetName=NetRleddebug_1 Pin=U3-30
+Added Net: Name=NetRleddebug_1
+Added Member To Class: ClassName=motherpetit Member=Component Rleddebug 
+Added Room: Name=Hbridge
+Added Room: Name=motherpetit

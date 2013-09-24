@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=GND Pin=LM2937ET-33-1
+Removed Pin From Net: NetName=5V Pin=LM2937ET-33-2
+Removed Member From Class: ClassName=motherpetit Member=LM2937ET-33
+Added Component: Designator=LM2937ET-3.3(TO-220V)
+Added Pin To Net: NetName=5V Pin=LM2937ET-3.3-1
+Added Pin To Net: NetName=GND Pin=LM2937ET-3.3-2
+Added Pin To Net: NetName=3V3 Pin=LM2937ET-3.3-3
+Added Member To Class: ClassName=motherpetit Member=Component LM2937ET-3.3
+Added Room: Name=Hbridge
+Added Room: Name=motherpetit
