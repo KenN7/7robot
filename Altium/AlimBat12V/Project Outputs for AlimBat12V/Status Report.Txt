@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [AlimBat12V.PrjPCB]
+   Generated File[pcbalim.TXT]
+   Generated File[pcbalim.DRL]
+   Generated File[pcbalim.LDP]
+   Generated File[pcbalim.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 17:45:49 On 25/10/2013

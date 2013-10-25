@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [MotherPetit.PrjPCB]
+   Generated File[mother_asserv_robinch.TXT]
+   Generated File[mother_asserv_robinch.DRL]
+   Generated File[mother_asserv_robinch.LDP]
+   Generated File[mother_asserv_robinch.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 19:08:25 On 23/10/2013
