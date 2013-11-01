@@ -1,0 +1,4 @@
+Change Component DesignItemId : Designator=U1 Old DesignItemId=L298HN New DesignItemId=L298N
+Change Component Footprint: Designator=U1 Old Footprint=Multiwatt15H New Footprint=Multiwatt15V
+Change Component Comment : Designator=U1 Old Comment=L298HN New Comment=L298N
+Added Member To Class: ClassName=motherpetit Member=Component U3 dsPIC33FJ64MC804-I/PT

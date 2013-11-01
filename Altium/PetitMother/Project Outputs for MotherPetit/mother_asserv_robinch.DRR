@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------
-NCDrill File Report For: mother_asserv_robinch.PcbDoc   23/10/2013  19:08:25
+NCDrill File Report For: mother_asserv_robinch.PcbDoc   01/11/2013  19:53:57
 ---------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -8,15 +8,15 @@ EIA File   : mother_asserv_robinch.DRL
 
 Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
 ---------------------------------------------------------------------------
-T1        0.7mm (27.559mil)        Round          8                17.97 mm (0.71 Inch)
-T2        0.7112mm (28mil)         Round          3                80.95 mm (3.19 Inch)
-T3        0.8mm (31.496mil)        Round          10               93.08 mm (3.66 Inch)
-T4        0.85mm (33.465mil)       Round          6                39.64 mm (1.56 Inch)
-T5        0.9mm (35.433mil)        Round          73               316.67 mm (12.47 Inch)
+T1        0.7mm (27.559mil)        Round          8                16.83 mm (0.66 Inch)
+T2        0.71mm (27.953mil)       Round          13               172.09 mm (6.78 Inch)
+T3        0.8mm (31.496mil)        Round          10               115.58 mm (4.55 Inch)
+T4        0.85mm (33.465mil)       Round          6                33.56 mm (1.32 Inch)
+T5        0.9mm (35.433mil)        Round          73               308.74 mm (12.16 Inch)
 T6        1mm (39.37mil)           Round          3                5.08 mm (0.20 Inch)
-T7        1.4mm (55.118mil)        Round          6                82.04 mm (3.23 Inch)
+T7        1.4mm (55.118mil)        Round          6                74.62 mm (2.94 Inch)
 T8        4.2mm (165.354mil)       Round          1                0.00 mm (0.00 Inch)
 ---------------------------------------------------------------------------
-Totals                                            110              635.43 mm (25.02 Inch)
+Totals                                            120              726.49 mm (28.60 Inch)
 
-Total Processing Time (hh:mm:ss) : 00:00:00
+Total Processing Time (hh:mm:ss) : 00:00:01
