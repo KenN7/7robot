@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\nim\Documents\GitHub\7robot\Altium\PetitMother\mother_asserv_robinch.PcbDoc
-Date     : 26/10/2013
-Time     : 00:30:29
+PCB File : C:\Users\Ken\Documents\GitHub\7robot\Altium\PetitMother\mother_asserv_robinch.PcbDoc
+Date     : 05/11/2013
+Time     : 22:36:52
 
 Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
 Rule Violations :0
@@ -100,69 +100,81 @@ Processing Rule : Net Antennae (Tolerance=0mm) (All)
 Rule Violations :0
 
 Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+   Violation between Text "Pmot" (143.815mm,97.282mm)  Top Overlay and 
+                     Arc (150.495mm,103.251mm)  Top Overlay
    Violation between Text "Encodeur2" (133.096mm,108.839mm)  Top Overlay and 
                      Arc (150.495mm,103.251mm)  Top Overlay
-   Violation between Text "Rpullup" (130.683mm,111.125mm)  Top Overlay and 
-                     Arc (120.015mm,105.664mm)  Top Overlay
-   Violation between Text "Cdecoup5" (158.115mm,112.395mm)  Top Overlay and 
-                     Arc (173.228mm,113.919mm)  Top Overlay
-   Violation between Text "Cdecoup3" (186.436mm,98.425mm)  Top Overlay and 
-                     Arc (188.595mm,95.25mm)  Top Overlay
+   Violation between Text "P10" (146.177mm,131.953mm)  Top Overlay and 
+                     Arc (146.177mm,133.731mm)  Top Overlay
+   Violation between Text "P9" (146.812mm,129.413mm)  Top Overlay and 
+                     Arc (146.177mm,133.731mm)  Top Overlay
+   Violation between Text "P8" (146.685mm,127.127mm)  Top Overlay and 
+                     Arc (147.066mm,125.857mm)  Top Overlay
+   Violation between Text "LaisseCon" (146.964mm,122.022mm)  Top Overlay and 
+                     Arc (147.066mm,125.857mm)  Top Overlay
    Violation between Text "P11" (154.686mm,116.967mm)  Top Overlay and 
                      Track (154.432mm,115.57mm)(154.432mm,118.11mm)  Top Overlay
    Violation between Text "P11" (154.686mm,116.967mm)  Top Overlay and 
                      Track (146.812mm,118.11mm)(154.432mm,118.11mm)  Top Overlay
    Violation between Text "P11" (154.686mm,116.967mm)  Top Overlay and 
                      Track (158.464mm,114.765mm)(158.464mm,120.765mm)  Top Overlay
-   Violation between Text "P7" (114.935mm,122.914mm)  Top Overlay and 
+   Violation between Text "P7" (115.062mm,122.936mm)  Top Overlay and 
+                     Track (117.883mm,124.714mm)(125.503mm,124.714mm)  Top Overlay
+   Violation between Text "P7" (115.062mm,122.936mm)  Top Overlay and 
                      Track (117.883mm,122.174mm)(117.883mm,124.714mm)  Top Overlay
-   Violation between Text "P6" (114.935mm,125.701mm)  Top Overlay and 
+   Violation between Text "C2" (118.618mm,121.92mm)  Top Overlay and 
+                     Track (117.883mm,122.174mm)(125.503mm,122.174mm)  Top Overlay
+   Violation between Text "P6" (115.062mm,125.73mm)  Top Overlay and 
                      Track (117.883mm,125.18mm)(117.883mm,127.72mm)  Top Overlay
-   Violation between Text "P5" (114.935mm,128.706mm)  Top Overlay and 
+   Violation between Text "P5" (115.062mm,128.524mm)  Top Overlay and 
                      Track (117.883mm,128.185mm)(117.883mm,130.725mm)  Top Overlay
    Violation between Text "P1" (115.57mm,131.826mm)  Top Overlay and 
                      Track (117.883mm,131.191mm)(117.883mm,133.731mm)  Top Overlay
-   Violation between Text "Cdecoup4" (128.524mm,112.014mm)  Top Overlay and 
-                     Track (126.619mm,114.268mm)(126.619mm,114.348mm)  Top Overlay
+   Violation between Text "AX12_B" (116.23mm,109.449mm)  Top Overlay and 
+                     Track (119.602mm,110.49mm)(119.682mm,110.49mm)  Top Overlay
+   Violation between Text "P8" (146.685mm,127.127mm)  Top Overlay and 
+                     Track (147.828mm,127.635mm)(148.844mm,127.635mm)  Top Overlay
+   Violation between Text "P8" (146.685mm,127.127mm)  Top Overlay and 
+                     Track (148.336mm,127.127mm)(148.336mm,128.143mm)  Top Overlay
    Violation between Text "P11" (154.686mm,116.967mm)  Top Overlay and 
                      Track (146.812mm,118.618mm)(154.432mm,118.618mm)  Top Overlay
    Violation between Text "P11" (154.686mm,116.967mm)  Top Overlay and 
                      Track (154.432mm,118.618mm)(154.432mm,121.158mm)  Top Overlay
-   Violation between Text "Rpullup" (130.683mm,111.125mm)  Top Overlay and 
-                     Track (116.332mm,111.633mm)(123.952mm,111.633mm)  Top Overlay
    Violation between Text "Encodeur2" (133.096mm,108.839mm)  Top Overlay and 
                      Track (137.198mm,110.109mm)(137.248mm,110.109mm)  Top Overlay
-   Violation between Text "Pmot" (136.322mm,97.282mm)  Top Overlay and 
-                     Track (132.97mm,98.63mm)(135.97mm,98.63mm)  Top Overlay
-   Violation between Text "Pmot" (136.322mm,97.282mm)  Top Overlay and 
-                     Track (139.97mm,98.63mm)(142.97mm,98.63mm)  Top Overlay
-   Violation between Text "Cdecoup3" (186.436mm,98.425mm)  Top Overlay and 
-                     Track (184.912mm,109.982mm)(194.31mm,109.982mm)  Top Overlay
+   Violation between Text "C1" (149.352mm,94.361mm)  Top Overlay and 
+                     Track (148.336mm,95.504mm)(149.606mm,95.504mm)  Top Overlay
    Violation between Text "Rp1" (176.276mm,121.92mm)  Top Overlay and 
-                     Track (177.578mm,111.379mm)(177.578mm,121.539mm)  Top Overlay
+                     Track (177.197mm,113.284mm)(177.197mm,123.444mm)  Top Overlay
    Violation between Text "Rp1" (176.276mm,121.92mm)  Top Overlay and 
-                     Track (177.038mm,111.379mm)(177.038mm,121.539mm)  Top Overlay
+                     Track (176.657mm,113.284mm)(176.657mm,123.444mm)  Top Overlay
    Violation between Text "Rp1" (176.276mm,121.92mm)  Top Overlay and 
-                     Track (177.038mm,121.539mm)(182.118mm,121.539mm)  Top Overlay
+                     Track (176.657mm,123.444mm)(181.737mm,123.444mm)  Top Overlay
    Violation between Text "C4" (174.523mm,130.785mm)  Top Overlay and 
                      Text "R3" (174.11mm,130.213mm)  Top Overlay
    Violation between Text "D3" (162.56mm,133.223mm)  Top Overlay and 
                      Text "D4" (162.544mm,130.168mm)  Top Overlay
-   Violation between Text "KEN - NIM" (146.558mm,88.646mm)  Top Overlay and 
-                     Text "2013" (150.495mm,86.741mm)  Top Overlay
-   Violation between Text "7Robinch" (147.193mm,90.678mm)  Top Overlay and 
-                     Text "KEN - NIM" (146.558mm,88.646mm)  Top Overlay
-Rule Violations :26
+Rule Violations :27
 
 Processing Rule : Silkscreen Over Component Pads (Clearance=0.254mm) (All),(All)
-   Violation between Track (124.46mm,93.98mm)(124.46mm,95.25mm)  Top Overlay and 
-                     Pad P10V-1(122.936mm,96.746mm)  Multi-Layer
-   Violation between Track (140.843mm,95.504mm)(142.113mm,95.504mm)  Top Overlay and 
-                     Pad Pmot-1(139.347mm,93.98mm)  Multi-Layer
+   Violation between Pad HOLE2-1(188.849mm,104.521mm)  Multi-Layer and 
+                     Arc (188.849mm,96.52mm)  Top Overlay
+   Violation between Text "P10V" (126.492mm,87.884mm)  Top Overlay and 
+                     Pad HOLE1-1(129.794mm,94.107mm)  Multi-Layer
+   Violation between Text "C2" (118.618mm,121.92mm)  Top Overlay and 
+                     Pad P7-2(121.693mm,123.444mm)  Multi-Layer
+   Violation between Text "C2" (118.618mm,121.92mm)  Top Overlay and 
+                     Pad P7-3(119.153mm,123.444mm)  Multi-Layer
+   Violation between Track (119.253mm,95.631mm)(120.523mm,95.631mm)  Top Overlay and 
+                     Pad P10V-1(117.757mm,94.107mm)  Multi-Layer
+   Violation between Text "P10" (146.177mm,131.953mm)  Top Overlay and 
+                     Pad Cdecoup5-2(146.177mm,132.461mm)  Multi-Layer
+   Violation between Text "C1" (149.352mm,94.361mm)  Top Overlay and 
+                     Pad Pmot-2(150.34mm,93.98mm)  Multi-Layer
+   Violation between Track (148.336mm,95.504mm)(149.606mm,95.504mm)  Top Overlay and 
+                     Pad Pmot-1(146.84mm,93.98mm)  Multi-Layer
    Violation between Track (184.912mm,114.3mm)(184.912mm,115.57mm)  Top Overlay and 
                      Pad P5V-1(186.436mm,112.804mm)  Multi-Layer
-   Violation between Text "U1" (158.013mm,95.377mm)  Top Overlay and 
-                     Pad D1-1(159.004mm,96.653mm)  Multi-Layer
    Violation between Track (167.513mm,106.553mm)(167.742mm,106.553mm)  Top Overlay and 
                      Pad R4-2(168.783mm,106.553mm)  Multi-Layer
    Violation between Track (162.204mm,106.553mm)(162.433mm,106.553mm)  Top Overlay and 
@@ -171,6 +183,12 @@ Processing Rule : Silkscreen Over Component Pads (Clearance=0.254mm) (All),(All)
                      Pad R1-2(171.323mm,106.553mm)  Multi-Layer
    Violation between Track (177.673mm,106.553mm)(177.902mm,106.553mm)  Top Overlay and 
                      Pad R1-1(178.943mm,106.553mm)  Multi-Layer
+   Violation between Text "1" (179.3mm,96.351mm)  Top Overlay and 
+                     Pad D10-2(178.943mm,96.653mm)  Multi-Layer
+   Violation between Text "15" (162.24mm,96.351mm)  Top Overlay and 
+                     Pad D7-2(161.417mm,96.653mm)  Multi-Layer
+   Violation between Text "Rp1" (176.276mm,121.92mm)  Top Overlay and 
+                     Pad LM2937ET-3.3-3(179.197mm,120.904mm)  Multi-Layer
    Violation between Track (172.926mm,120.142mm)(173.006mm,120.142mm)  Top Overlay and 
                      Pad Rp1-1(173.736mm,120.904mm)  Top Layer
    Violation between Track (172.926mm,121.666mm)(173.006mm,121.666mm)  Top Overlay and 
@@ -277,20 +295,18 @@ Processing Rule : Silkscreen Over Component Pads (Clearance=0.254mm) (All),(All)
                      Pad Cdecoup4-2(125.857mm,116.587mm)  Top Layer
    Violation between Track (126.746mm,117.387mm)(126.746mm,117.437mm)  Top Overlay and 
                      Pad Cdecoup4-2(125.857mm,116.587mm)  Top Layer
-   Violation between Text "AX12_B" (116.484mm,115.291mm)  Top Overlay and 
-                     Pad Cdecoup4-2(125.857mm,116.587mm)  Top Layer
-   Violation between Track (125.095mm,114.268mm)(125.095mm,114.348mm)  Top Overlay and 
-                     Pad Rpullup-1(125.857mm,113.538mm)  Top Layer
-   Violation between Track (126.619mm,114.268mm)(126.619mm,114.348mm)  Top Overlay and 
-                     Pad Rpullup-1(125.857mm,113.538mm)  Top Layer
-   Violation between Track (125.095mm,114.268mm)(125.095mm,114.348mm)  Top Overlay and 
-                     Pad Rpullup-2(125.857mm,115.088mm)  Top Layer
-   Violation between Track (126.619mm,114.268mm)(126.619mm,114.348mm)  Top Overlay and 
-                     Pad Rpullup-2(125.857mm,115.088mm)  Top Layer
-   Violation between Text "Cdecoup4" (128.524mm,112.014mm)  Top Overlay and 
-                     Pad Rpullup-2(125.857mm,115.088mm)  Top Layer
-   Violation between Text "AX12_B" (116.484mm,115.291mm)  Top Overlay and 
-                     Pad Rpullup-2(125.857mm,115.088mm)  Top Layer
+   Violation between Track (119.602mm,108.966mm)(119.682mm,108.966mm)  Top Overlay and 
+                     Pad Rpullup-1(118.872mm,109.728mm)  Top Layer
+   Violation between Track (119.602mm,110.49mm)(119.682mm,110.49mm)  Top Overlay and 
+                     Pad Rpullup-1(118.872mm,109.728mm)  Top Layer
+   Violation between Text "AX12_B" (116.23mm,109.449mm)  Top Overlay and 
+                     Pad Rpullup-1(118.872mm,109.728mm)  Top Layer
+   Violation between Track (119.602mm,108.966mm)(119.682mm,108.966mm)  Top Overlay and 
+                     Pad Rpullup-2(120.422mm,109.728mm)  Top Layer
+   Violation between Track (119.602mm,110.49mm)(119.682mm,110.49mm)  Top Overlay and 
+                     Pad Rpullup-2(120.422mm,109.728mm)  Top Layer
+   Violation between Text "AX12_B" (116.23mm,109.449mm)  Top Overlay and 
+                     Pad Rpullup-2(120.422mm,109.728mm)  Top Layer
    Violation between Track (174.371mm,128.563mm)(174.371mm,128.613mm)  Top Overlay and 
                      Pad C4-1(175.26mm,129.413mm)  Top Layer
    Violation between Track (176.149mm,128.563mm)(176.149mm,128.613mm)  Top Overlay and 
@@ -323,9 +339,11 @@ Processing Rule : Silkscreen Over Component Pads (Clearance=0.254mm) (All),(All)
                      Pad Cdecoup1-2(138.048mm,109.22mm)  Top Layer
    Violation between Text "Encodeur2" (133.096mm,108.839mm)  Top Overlay and 
                      Pad Cdecoup1-2(138.048mm,109.22mm)  Top Layer
-Rule Violations :84
+Rule Violations :91
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
+   Violation between Via (180.415mm,131.272mm) Top Layer to Bottom Layer and 
+                     Pad R5-1(179.705mm,132.657mm)  Top Layer
    Violation between Pad U2-2(152.456mm,133.877mm)  Top Layer and 
                      Pad U2-1(152.456mm,134.527mm)  Top Layer
    Violation between Pad U2-3(152.456mm,133.227mm)  Top Layer and 
@@ -460,8 +478,6 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
                      Pad U3-2(132.944mm,112.46mm)  Top Layer
    Violation between Pad P3-2(180.415mm,126.657mm)  Top Layer and 
                      Pad P3-1(180.415mm,127.457mm)  Top Layer
-   Violation between Via (180.34mm,128.778mm) Top Layer to Bottom Layer and 
-                     Pad P3-1(180.415mm,127.457mm)  Top Layer
    Violation between Pad P3-3(180.415mm,125.857mm)  Top Layer and 
                      Pad P3-2(180.415mm,126.657mm)  Top Layer
    Violation between Pad P3-4(180.415mm,125.057mm)  Top Layer and 
@@ -486,5 +502,5 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 
-Violations Detected : 223
-Time Elapsed        : 00:00:01
+Violations Detected : 231
+Time Elapsed        : 00:00:02

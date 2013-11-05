@@ -1,0 +1,4 @@
+Added Component: Designator=HOLE1(SCREW)
+Added Component: Designator=HOLE2(SCREW)
+Added Member To Class: ClassName=motherpetit Member=Component HOLE1 Hole
+Added Member To Class: ClassName=motherpetit Member=Component HOLE2 Hole
