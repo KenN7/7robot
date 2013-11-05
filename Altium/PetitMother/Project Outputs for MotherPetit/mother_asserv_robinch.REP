@@ -53,7 +53,7 @@ Generating : Bottom Layer
 Used DCodes :
     D10
     D11
-    D14
+    D13
     D23
     D24
     D25
@@ -141,7 +141,7 @@ Generating : Bottom Solder
 
 
 Used DCodes :
-    D48
+    D47
     D57
     D58
     D59
@@ -177,7 +177,7 @@ Generating : Mechanical 1
 
 
 Used DCodes :
-    D41
+    D39
     D72
     D73
 *************************************************************
