@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: pcbalim.GBR   25/10/2013  17:43:48
+Gerber File Extension Report For: pcbalim.GBR   06/11/2013  09:23:40
 ------------------------------------------------------------------------------------------
 
 
@@ -15,4 +15,5 @@ Layer Extension     Layer Description
 .GM1                Mechanical 1                            
 .GKO                Keep-Out Layer                          
 .GD1                Drill Drawing                           
+.GG1                Drill Guide                             
 ------------------------------------------------------------------------------------------

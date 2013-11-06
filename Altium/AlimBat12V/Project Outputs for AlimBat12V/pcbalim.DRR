@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------
-NCDrill File Report For: pcbalim.PcbDoc   25/10/2013  17:45:49
+NCDrill File Report For: pcbalim.PcbDoc   06/11/2013  09:24:45
 ---------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -9,15 +9,15 @@ EIA File   : pcbalim.DRL
 Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
 ---------------------------------------------------------------------------
 T1        0.7mm (27.559mil)        Round          4                33.52 mm (1.32 Inch)
-T2        0.762mm (30mil)          Round          14               188.79 mm (7.43 Inch)
+T2        0.76mm (29.921mil)       Round          14               188.79 mm (7.43 Inch)
 T3        0.8mm (31.496mil)        Round          4                36.83 mm (1.45 Inch)
-T4        0.8128mm (32mil)         Round          2                2.54 mm (0.10 Inch)
-T5        0.85mm (33.465mil)       Round          6                67.69 mm (2.67 Inch)
+T4        0.81mm (31.89mil)        Round          2                2.54 mm (0.10 Inch)
+T5        0.85mm (33.465mil)       Round          6                66.77 mm (2.63 Inch)
 T6        1.2mm (47.244mil)        Round          4                17.57 mm (0.69 Inch)
 T7        1.3mm (51.181mil)        Round          4                20.00 mm (0.79 Inch)
 T8        1.4mm (55.118mil)        Round          12               177.76 mm (7.00 Inch)
 T9        3.4mm (133.858mil)       Round          3                121.39 mm (4.78 Inch)
 ---------------------------------------------------------------------------
-Totals                                            53               666.09 mm (26.22 Inch)
+Totals                                            53               665.17 mm (26.19 Inch)
 
 Total Processing Time (hh:mm:ss) : 00:00:00
