@@ -1,0 +1,17 @@
+Added Component: Designator=Regulator 5(PTN78020W)
+Added Component: Designator=Regulator 10(PTN78020W)
+Added Pin To Net: NetName=GND Pin=Regulator 5-1
+Added Pin To Net: NetName=BAT Pin=Regulator 5-2
+Added Pin To Net: NetName=NetRegulator 5_4 Pin=Regulator 5-4
+Added Pin To Net: NetName=5V Pin=Regulator 5-5
+Added Pin To Net: NetName=5V Pin=Regulator 5-6
+Added Pin To Net: NetName=GND Pin=Regulator 5-7
+Added Pin To Net: NetName=GND Pin=Regulator 10-1
+Added Pin To Net: NetName=BAT Pin=Regulator 10-2
+Added Pin To Net: NetName=NetRegulator 10_4 Pin=Regulator 10-4
+Added Pin To Net: NetName=10V Pin=Regulator 10-5
+Added Pin To Net: NetName=10V Pin=Regulator 10-6
+Added Pin To Net: NetName=GND Pin=Regulator 10-7
+Added Member To Class: ClassName=CarteAlimSch Member=Component Regulator 5 PTN78020W
+Added Member To Class: ClassName=CarteAlimSch Member=Component Regulator 10 PTN78020W
+Added Room: Name=CarteAlimSch
