@@ -1,0 +1,10 @@
+Added Component: Designator=Pmot1(TERM2W-3.5)
+Added Component: Designator=Pmot2(TERM2W-3.5)
+Added Pin To Net: NetName=NetD6_1 Pin=Pmot1-1
+Added Pin To Net: NetName=NetD5_1 Pin=Pmot1-2
+Added Pin To Net: NetName=NetD2_1 Pin=Pmot2-1
+Added Pin To Net: NetName=NetD1_1 Pin=Pmot2-2
+Added Member To Class: ClassName=Hbridge Member=Component Pmot1 Header 2
+Added Member To Class: ClassName=Hbridge Member=Component Pmot2 Header 2
+Added Room: Name=Hbridge
+Added Room: Name=motherpetit
