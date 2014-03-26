@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=VMOT Pin=C1-1
+Removed Pin From Net: NetName=GND Pin=C1-2
+Removed Pin From Net: NetName=5V Pin=C2-1
+Removed Pin From Net: NetName=GND Pin=C2-2
+Removed Member From Class: ClassName=Hbridge Member=C1
+Removed Member From Class: ClassName=Hbridge Member=C2
+Change Component Footprint: Designator=C3 Old Footprint=RB.2/.4 New Footprint=RB.1/.3
